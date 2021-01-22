@@ -225,3 +225,51 @@ main .third_frame {
 }
 
 /* Main Fourth Frame */
+main .fourth_frame {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #018795;
+}
+.fourth_frame .fourth_mini {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.fourth_mini .fourth_text h2 {
+  padding: 3.5vh 0;
+}
+.fourth_text p {
+  line-height: 3vh;
+}
+.fourth_mini .fourth_box_container {
+  margin-top: 4vh;
+}
+.fourth_mini .mini_box {
+  width: 25%;
+  float: left;
+}
+.fourth_mini .box_row_up .mini_box {
+  border-bottom: 1px solid white;
+}
+.fourth_mini .box_row_up .mini_box {
+  border-right: 1px solid white;
+}
+.fourth_mini .fourth_box_container .mini_box:last-child {
+  border-right: none;
+}
+.fourth_mini .box_row_down .mini_box {
+  border-right: 1px solid white;
+}
+.fourth_mini .mini_box img {
+  padding-top: 2.5vh;
+  width: 150px;
+  height: 100px;
+}
+.fourth_mini::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main Fifth Frame */
