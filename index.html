@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <title>Hubspot</title>
   </head>
   <body>
@@ -10,12 +13,12 @@
     <div class="fixed_container">
       <nav>
         <ul>
-          <li class="horizontal"><a class="blue_shade" href="#">English</a></li>
+          <li class="horizontal"><a class="blue_shade" href="#"><i class="fas fa-globe-europe"></i> English <i class="fas fa-chevron-down"> </i></a></li>
           <li class="blue_shade horizontal"> | </li>
           <li class="horizontal"><a class="blue_shade" href="#">Contact Us</a></li>
         </ul>
         <ul>
-          <li class="horizontal"><a href="#">&#128269;</a></li>
+          <li class="horizontal"><a href="#"><i class="fas fa-search"></i></a></li>
           <li class="horizontal"><a href="#">Log in</a></li>
           <li class="horizontal"><a class="orange_button" href="#">GetHubSpotFree</a></li>
         </ul>
@@ -28,11 +31,11 @@
       <nav class="header_nav">
         <img src="img/logo.svg" alt="Logo">
         <ul>
-          <li class="horizontal"><a class="blue_shade" href="#">Software</a></li>
+          <li class="horizontal"><a class="blue_shade" href="#">Software<i class="fas fa-chevron-down"></i></a></li>
           <li class="horizontal"><a class="blue_shade" href="#">Pricing</a></li>
-          <li class="horizontal"><a class="blue_shade" href="#">Resources</a></li>
-          <li class="horizontal"><a class="blue_shade" href="#">Partners</a></li>
-          <li class="horizontal"><a class="blue_shade" href="#">About</a></li>
+          <li class="horizontal"><a class="blue_shade" href="#">Resources<i class="fas fa-chevron-down"></i></a></li>
+          <li class="horizontal"><a class="blue_shade" href="#">Partners<i class="fas fa-chevron-down"></i></a></li>
+          <li class="horizontal"><a class="blue_shade" href="#">About<i class="fas fa-chevron-down"></i></a></li>
         </ul>
       </nav>
 
@@ -56,7 +59,7 @@
       <!-- First Frame -->
       <div class="first_frame">
         <div class="first_mini">
-          <img src="" alt="">
+          <img src="img/cube.png" alt="cube">
           <h2>Powerful Alone. Better Togheter</h2>
           <p>HubSpot offers a full stack of software for marketing, sales, and customer service,
            with a completely free CRM at its core. They're powerful alone - but even better when
@@ -65,10 +68,11 @@
       </div>
       <!-- Second Frame -->
       <div class="second_frame">
+
         <div class="second_mini">
 
           <div class="left_second">
-            <img class="upper_imgs"src="" alt="">
+            <img class="upper_imgs"src="img/illustrations.svg" alt="Book">
             <a class="orange_button" href="#">Learn More</a>
           </div>
 
@@ -82,17 +86,15 @@
               <li class="horizontal"><a class="blue_shade" href="#">Deals</a></li>
               <li class="horizontal"><a class="blue_shade" href="#">Task</a></li>
             </ul>
-
           </div>
 
         </div>
-
       </div>
       <!-- Third Frame -->
       <div class="third_frame">
         <div class="third_mini">
           <div class="left column">
-            <img class="upper_imgs" src="" alt="">
+            <div class="upper_imgs" src="img/markhub.svg" id="Marketing_Hub"></div>
             <h3>Mrketing Hub</h3>
             <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound
              marketing campaings at scale</p>
@@ -106,29 +108,27 @@
           </div>
 
           <div class="center column">
-            <img class="upper_imgs" src="" alt="">
-            <h3>Mrketing Hub</h3>
-            <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound
-             marketing campaings at scale</p>
+            <div class="upper_imgs" src="img/proillustration.svg" id="Sales_Hub"></div>
+            <h3>Sales Hub</h3>
+            <p>Time-saving sales software that helps you get deeper insights into prospects, automate the task you hate, and close more deals faster.</p>
              <h5>POPOLAR FEATURE</h5>
              <ul>
-               <li>Lead Generation</li>
-               <li>Marketing Automation</li>
-               <li>Analytics</li>
+               <li>Email Tracking</li>
+               <li>Meeting Scheduling</li>
+               <li>Email Automation</li>
              </ul>
              <a class="orange_button" href="#">Learn More</a>
           </div>
 
           <div class="right column">
-            <img class="upper_imgs" src="" alt="">
-            <h3>Mrketing Hub</h3>
-            <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound
-             marketing campaings at scale</p>
+            <div class="upper_imgs" src="img/table.svg" id="Service_Hub"></div>
+            <h3>Service Hub</h3>
+            <p>Customer Service software to help you connect with customers, exceed expectations, and turn them into promotes that grow your business.</p>
              <h5>POPOLAR FEATURE</h5>
              <ul>
-               <li>Lead Generation</li>
-               <li>Marketing Automation</li>
-               <li>Analytics</li>
+               <li>Tickets</li>
+               <li>Customer Feedback</li>
+               <li>Knowledge Base</li>
              </ul>
              <a class="orange_button" href="#">Learn More</a>
           </div>
@@ -144,44 +144,45 @@
           <div class="fourth_box_container">
             <div class="box_row_up">
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div class="box_image" id="hands"></div>
                 <h1>150+</h1>
                 <span>HubSpot user groups</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="blogs"></div>
                 <h1>4,5M+</h1>
                 <span>monthly visit</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="academy"></div>
                 <h1>155k+</h1>
                 <span>certified professionals</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="inbound"></div>
                 <h1>21k+</h1>
                 <span>registered attendees</span>
               </div>
             </div>
+
             <div class="box_row_down">
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="connect"></div>
                 <h1>200+</h1>
                 <span>integrations</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="world"></div>
                 <h1>6+</h1>
                 <span>languages</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div  class="box_image" id="chat"></div>
                 <h1>2.6+M</h1>
                 <span>social followers</span>
               </div>
               <div class="mini_box">
-                <img  class="box_image" src="" alt="">
+                <div class="box_image" id="growthub"></div>
                 <h1>5k+</h1>
                 <span>profiles and counting</span>
               </div>
@@ -198,14 +199,14 @@
               <p>customers in over <span>100</span> countries growing their business with HubSpot</p>
             </div>
             <div class="right_upframe frame_column">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
-              <img class="partners_imgs"src="" alt="">
+              <div class="partners_imgs"src="img/soundcloud.webp" id="Sound_Cloud"></div>
+              <div class="partners_imgs"src="img/wwf.webp" id="WWF_Logo"></div>
+              <div class="partners_imgs"src="img/trello.webp" id="Trello_Logo"></div>
+              <div class="partners_imgs"src="img/vmware.webp" id="Vmware_Logo"></div>
+              <div class="partners_imgs"src="img/g2.webp" id="G2_Logo"></div>
+              <div class="partners_imgs"src="img/classpass.webp" id="Class_Pass"></div>
+              <div class="partners_imgs"src="img/subaru.webp" id="Subaru_Logo"></div>
+              <div class="partners_imgs"src="img/monkey.svg" id="Monkey_Logo"></div>
             </div>
           </div>
           <div class="lower_frame">
@@ -265,9 +266,10 @@
             <li><a href="#">hubspot templates</a></li>
             <li><a href="#">Free Tools & Generations</a></li>
             <li><a class="white_button"href="#">Contac HubSpot Support</a></li>
-            <li><a href="#">F</a><a href="#"> I</a><a href="#"> Y</a><a href="#"> T</a><a href="#"> L</a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
+
         <div class="footer_midlayer">
           <ul>
             <li class="horizontal"><a href="#">English</a></li>
@@ -276,17 +278,16 @@
             <li class="horizontal"><a href="#">Español</a></li>
             <li class="horizontal"><a href="#">Português</a></li>
             <li class="horizontal"><a href="#">Français</a></li>
-
           </ul>
 
         </div>
         <div class="footer_basecontainer">
           <div class="basecontainer_left">
-            <h2>HubSpot</h2>
+            <img src="img/hubspotwhite.svg" alt="White Logo"></img>
             <h4>Copyright &COPY; HubSpot, inc.</h4>
           </div>
           <ul>
-            <li class="horizontal">Legal Stuff<a href="#"></a></li>
+            <li class="horizontal"><a href="#">Legal Stuff</a></li>
             <li class="horizontal">Privacy Policy<a href="#"></a></li>
           </ul>
         </div>
