@@ -4,12 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   color: #09223c;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.2em;
 }
 ul {
@@ -21,13 +18,12 @@ a {
 .blue_shade {
   color: #09223c;
 }
-a.orange_button {
+a.orange_button { /* Tutti i bottoni arancioni */
   color: white;
-  padding: 20px 45px;
+  padding: 25px 45px;
   background-color: #ff7a59;
   border-radius: 7px;
   display: inline-block;
-  font-weight: bold;
   font-size: 0.9em;
   line-height: 3vh;
 }
@@ -35,16 +31,13 @@ a.orange_button:hover {
   background-color: #ff7a599e;
 }
 .horizontal {
-  display: inline-block;
+  display: inline-block; /* principalmente per i li */
 }
 .mini_trial {
-  font-size: 0.9em;
-}
-.frame_column {
-  float: left;
+  font-size: 0.7em; /* si ripete due volte */
 }
 i{
-  padding: 0 0.5vw
+  padding: 0 0.5vw /* spazio dei font-awsome */
 }
 .second_frame li::before , .third_frame li::before {
   font-family: 'Font Awesome\ 5 Free';
@@ -61,6 +54,12 @@ p {
   display: table;
   clear: both;
 }
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
 /* Fixed Navigator */
 .fixed_container {
   width: 100%;
@@ -76,22 +75,17 @@ p {
   padding: 3vh 0;
 }
 .fixed_container nav ul:first-child {
-  float: left;
   margin-top: 1.5vh;
-}
-.fixed_container nav ul:last-child {
-  float: right;
 }
 .fixed_container ul li{
   padding: 0 0.5vw;
 }
 .fixed_container ul:last-child li:nth-child(2) a {
   color: #ff7a59;
-  padding: 13px;
+  padding: 15px;
   background-color: white;
   border-radius: 7px;
-  border-top: 3px solid #ff7a59;
-  font-weight: bold;
+  border-top: 2px solid #ff7a59;
 }
 .fixed_container ul:last-child li:nth-child(2) a:hover {
   background-color: #9a99991f;
@@ -107,22 +101,14 @@ header nav {
   padding: 2.5vh 0;
 }
 header nav img {
-  float: left;
-  height: 40px;
+  height: 4vh;
 }
 header nav ul {
-  float: right;
   line-height: 4.2vh;
 }
 header nav ul li a {
   padding: 13px;
 }
-header nav::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 header .header_container {
   width: 100%;
   height: 70vh;
@@ -183,7 +169,6 @@ main {
 }
 .second_mini .left_second {
   margin: 5vh 5vw;
-  float: left;
 }
 .upper_imgs {
   height: 15vh;
@@ -191,13 +176,9 @@ main {
   display: block;
   margin: 0 auto;
 }
-.left_second a {
-  display: inline-block;
-}
 .second_mini .right_second {
   margin: 5vh 0;
   max-width: 60%;
-  float: left;
   line-height: 9vh;
 }
 .right_second h4::after {
@@ -219,7 +200,7 @@ main .third_frame {
   padding: 5.5vh;
 }
 .third_frame .third_mini {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .third_mini .column {
@@ -228,7 +209,6 @@ main .third_frame {
   padding: 3.5vh 2.5vw;
   background-color: white;
   border-radius: 10px;
-  float: left;
 }
 .third_mini .column:hover {
   border: 1px solid rgba(0,0,0,0.25);
@@ -253,8 +233,9 @@ main .third_frame {
 }
 .third_mini .column p {
   margin: 3vh 0;
-  min-height: 180px;
+  min-height: 220px;
   border-bottom: 2px solid grey;
+  max-width: 15vw;
 }
 .third_mini .column ul {
   margin: 2.5vh 0 6vh;
@@ -285,9 +266,14 @@ main .fourth_frame {
 .fourth_mini .fourth_box_container {
   margin-top: 4vh;
 }
+.fourth_mini .fourth_box_container h1 {
+  font-size: 3em;
+}
+.fourth_mini .fourth_box_container span {
+  font-size: 0.7em;
+}
 .fourth_mini .mini_box {
   width: 25%;
-  float: left;
   padding: 20px;
   line-height: 6vh;
   font-weight: bold;
@@ -382,8 +368,7 @@ main .fifth_frame {
 .upper_frame .right_upframe .partners_imgs {
   margin: 0 auto;
   width: 25%;
-  height: 6vh;
-  float: left;
+  height: 8vh;
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -412,7 +397,6 @@ main .fifth_frame {
 .right_upframe #Monkey_Logo {
   background-image: url(../img/monkey.svg);
 }
-
 .left_downframe, .right_downframe {
   width: 50%;
 }
@@ -449,7 +433,6 @@ footer a:hover {
 }
 .footer_upcontainer .footer_column {
   width: 25%;
-  float: left;
 }
 .footer_column h4 {
   line-height: 7vh;
@@ -476,10 +459,6 @@ footer a:hover {
 .footer_basecontainer{
   padding-top: 3vh;
 }
-.footer_basecontainer ul {
-  float: right;
-}
 .basecontainer_left {
   width: 20%;
-  float: left;
 }
