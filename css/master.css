@@ -116,6 +116,7 @@ header .header_container {
   background-size: 100% 114%;
   background-repeat: no-repeat;
   font-size: 1.4em;
+  padding-top: 4vh;
 }
 .header_container .header_text {
   width: 45%;
@@ -123,7 +124,8 @@ header .header_container {
   line-height: 10vh;
 }
  .header_text p {
-  line-height: 5vh;
+  line-height: 4vh;
+  margin-bottom: 2vh;
 }
 
 /* Section Splitter */
