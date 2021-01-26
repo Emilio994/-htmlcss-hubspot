@@ -216,9 +216,6 @@ main .third_frame {
 }
 .third_mini .column .upper_imgs {
   margin: 1.5vh auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   object-fit: fill;
 }
 .third_mini .column p {
@@ -284,8 +281,6 @@ main .fourth_frame {
   width: 10vw;
   height: 7vh;
   margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
   object-fit: scale-down ;
 }
 
@@ -328,9 +323,6 @@ main .fifth_frame {
   margin: 0 auto;
   width: 25%;
   height: 9vh;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
   object-fit: contain;
   padding: 2%;
 }
