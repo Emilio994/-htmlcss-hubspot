@@ -63,9 +63,11 @@ p {
 .float_right {
   float: right;
 }
-.chevron li.horizontal:hover li {
+.chevron:hover li {
   display: block;
-  text-align: center;
+  box-shadow: 0 0 5px 1px;
+  margin-bottom: 1vh;
+  border-radius: 5px;
 }
 li.hidden {
   text-align: center;
@@ -73,6 +75,9 @@ li.hidden {
 }
 a.enlight:hover {
   color: lightblue;
+}
+a.redlight:hover {
+  color: red;
 }
 
 /* Fixed Navigator */
@@ -82,23 +87,39 @@ a.enlight:hover {
   border-bottom: 3px solid #09223c;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 99;
 }
 .fixed_container nav {
   width: 80%;
   margin: 0 auto;
-  padding: 3vh 0;
-  line-height: 4vh;
+  padding: 2vh 0;
+  line-height: 5vh;
 }
 .fixed_container ul li{
   padding: 0 0.5vw;
+}
+.fixed_dropdown_menu {
+  display: block;
+  border-radius: 10px;
+  position: absolute;
+  width: 8%;
+  z-index: 999;
+}
+.fixed_dropdown_menu li {
+  background-color: rgba(245,248,250,0.8);
+}
+.fixed_container ul.float_right input {
+  width: 10vw;
+  height: 3vh;
+  position: relative;
+  bottom: 0.2vh;
 }
 .fixed_container ul.float_right li:nth-child(2) a {
   color: #ff7a59;
   padding: 15px;
   background-color: white;
-  border-radius: 7px;
-  border-top: 2px solid #ff7a59;
+  border-radius: 10px;
+  border-bottom: 1px solid #ff7a59;
 }
 .fixed_container ul:last-child li:nth-child(2) a:hover {
   background-color: #9a99991f;
@@ -118,9 +139,27 @@ header nav img {
 }
 header nav ul {
   line-height: 4.2vh;
+  margin-right: 1.5vw;
 }
-header nav ul li a {
-  padding: 13px;
+header .header_dropdown {
+  display: block;
+  border-radius: 10px;
+  width: 11%;
+  position: absolute;
+  z-index: 999;
+}
+header nav ul div li {
+  width: 11vw;
+  position: relative;
+  right: 20%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 0 5px 1px;
+  border-radius: 15px;
+  margin-bottom: 1vh;
+}
+header nav ul div li:hover {
+  background-color: rgba(9,34,60,0.2);
 }
 header .header_container {
   width: 100%;
@@ -358,11 +397,10 @@ footer a:hover {
 }
 .footer_midlayer ul li a i {
   width: 8%;
-  font-size: 2.5em;
+  font-size: 1.5em;
   border: 3px dashed white;
   padding: 10px;
-  border-radius: 15px;
-  margin: 0 1.5vw;
+  border-radius: 10px;
   margin-bottom: 2vh;
 }
 .footer_midlayer ul li a i:hover {
