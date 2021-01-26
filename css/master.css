@@ -60,6 +60,7 @@ p {
 .float_right {
   float: right;
 }
+
 /* Fixed Navigator */
 .fixed_container {
   width: 100%;
@@ -73,9 +74,7 @@ p {
   width: 80%;
   margin: 0 auto;
   padding: 3vh 0;
-}
-.fixed_container nav ul:first-child {
-  margin-top: 1.5vh;
+  line-height: 5vh;
 }
 .fixed_container ul li{
   padding: 0 0.5vw;
@@ -113,8 +112,7 @@ header .header_container {
   width: 100%;
   height: 70vh;
   background-image: url(../img/jumbotron.png);
-  background-size: 100% 114%;
-  background-repeat: no-repeat;
+  background-size: 100% 113%;
   font-size: 1.4em;
   padding-top: 4vh;
 }
@@ -149,8 +147,8 @@ main {
 }
 .first_mini img {
   padding-top: 4vh;
-  height: 350px;
-  width: 400px;
+  height: 35vh;
+  width: 25vw;
 }
 .first_mini h2 {
   margin: 3vh;
@@ -170,7 +168,7 @@ main {
   border-radius: 15px;
 }
 .second_mini .left_second {
-  margin: 5vh 5vw;
+  margin: 5vh 7vw;
 }
 .upper_imgs {
   height: 15vh;
@@ -218,20 +216,10 @@ main .third_frame {
 }
 .third_mini .column .upper_imgs {
   margin: 1.5vh auto;
-  padding: 0 22%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-.column #Marketing_Hub {
-  background-image: url(../img/markhub.svg);
-}
-.column #Sales_Hub {
-  background-image: url(../img/proillustration.svg);
-  background-size: 110%;
-}
-.column #Service_Hub {
-  background-image: url(../img/table.svg);
+  object-fit: fill;
 }
 .third_mini .column p {
   margin: 3vh 0;
@@ -266,13 +254,13 @@ main .fourth_frame {
   line-height: 3vh;
 }
 .fourth_mini .fourth_box_container {
-  margin-top: 4vh;
+  margin-top: 3.5vh;
 }
 .fourth_mini .fourth_box_container h1 {
   font-size: 3em;
 }
 .fourth_mini .fourth_box_container span {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .fourth_mini .mini_box {
   width: 25%;
@@ -298,45 +286,14 @@ main .fourth_frame {
   margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
-}
-.mini_box #hands {
-  background-image: url(../img/handshake.svg);
-  background-size: 35%;
-}
-.mini_box #blogs {
-  background-image: url(../img/hubspotblog.svg);
-  background-size: 55%;
-}
-.mini_box #academy {
-  background-image: url(../img/academy.svg);
-  background-size: 90%;
-}
-.mini_box #inbound {
-  background-image: url(../img/inbound.svg);
-  background-size: 65%;
-}
-.mini_box #connect {
-  background-image: url(../img/hubspotconnect.svg);
-  background-size: 55%;
-}
-.mini_box #world {
-  background-image: url(../img/communityglobe.svg);
-  background-size: 25%;
-}
-.mini_box #chat {
-  background-image: url(../img/communityfollowers.svg);
-  background-size: 25%;
-}
-.mini_box #growthub {
-  background-image: url(../img/growthhub.svg);
-  background-size: 65%;
+  object-fit: scale-down ;
 }
 
 /* Main Fifth Frame */
 main .fifth_frame {
   width: 100%;
   background-color: white;
-  padding: 4vh 0;
+  padding: 2vh 0;
 }
 .fifth_frame .fifth_mini {
   width: 70%;
@@ -370,34 +327,12 @@ main .fifth_frame {
 .upper_frame .right_upframe .partners_imgs {
   margin: 0 auto;
   width: 25%;
-  height: 8vh;
+  height: 9vh;
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-}
-.right_upframe #Sound_Cloud {
-  background-image: url(../img/soundcloud.webp);
-}
-.right_upframe #WWF_Logo {
-  background-image: url(../img/wwf.webp);
-}
-.right_upframe #Trello_Logo {
-  background-image: url(../img/trello.webp);
-}
-.right_upframe #Vmware_Logo {
-  background-image: url(../img/vmware.webp);
-}
-.right_upframe #G2_Logo {
-  background-image: url(../img/g2.webp);
-}
-.right_upframe #Class_Pass {
-  background-image: url(../img/classpass.webp);
-}
-.right_upframe #Subaru_Logo {
-  background-image: url(../img/subaru.webp);
-}
-.right_upframe #Monkey_Logo {
-  background-image: url(../img/monkey.svg);
+  object-fit: contain;
+  padding: 2%;
 }
 .left_downframe, .right_downframe {
   width: 50%;
