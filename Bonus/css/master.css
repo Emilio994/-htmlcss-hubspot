@@ -390,7 +390,7 @@ footer a:hover {
 }
 .footer_upcontainer .footer_column {
   width: 25%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px dotted white;
   margin-top: 4vh;
   padding-bottom: 4vh;
   border-top: 2px solid white;
@@ -401,14 +401,9 @@ footer a:hover {
 .footer_midlayer ul li a i {
   width: 8%;
   font-size: 1.5em;
-  border: 3px dashed white;
-  padding: 10px;
-  border-radius: 10px;
   margin-bottom: 2vh;
 }
-.footer_midlayer ul li a i:hover {
-  border: 3px solid lightblue;
-}
+
 .footer_column ul li a.white_button:hover {
   background-color: #ffffff9e;
 }
@@ -419,7 +414,7 @@ footer a:hover {
   text-align: center;
   margin-top: 38vh;
   padding: 2vh 0;
-  border-bottom:  2px solid white;
+  border-bottom:  2px dotted white;
 }
 .footer_basecontainer{
   padding-top: 3vh;
