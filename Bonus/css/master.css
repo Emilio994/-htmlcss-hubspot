@@ -63,6 +63,9 @@ p {
 .float_right {
   float: right;
 }
+.chevron {
+  position: relative;
+}
 .chevron:hover li {
   display: block;
   box-shadow: 0 0 5px 1px;
@@ -76,7 +79,7 @@ li.hidden {
 a.enlight:hover {
   color: lightblue;
 }
-a.redlight:hover {
+li.redlight:hover a {
   color: red;
 }
 
@@ -102,17 +105,20 @@ a.redlight:hover {
   display: block;
   border-radius: 10px;
   position: absolute;
-  width: 8%;
   z-index: 999;
+  left: 1vw;
 }
 .fixed_dropdown_menu li {
   background-color: rgba(245,248,250,0.8);
 }
 .fixed_container ul.float_right input {
   width: 10vw;
-  height: 3vh;
+  height: 4vh;
+  padding: 5px;
   position: relative;
   bottom: 0.2vh;
+  border-radius: 5px;
+  border: 1px solid  #ff7a59;
 }
 .fixed_container ul.float_right li:nth-child(2) a {
   color: #ff7a59;
@@ -144,7 +150,6 @@ header nav ul {
 header .header_dropdown {
   display: block;
   border-radius: 10px;
-  width: 11%;
   position: absolute;
   z-index: 999;
 }
@@ -299,11 +304,9 @@ main .fourth_frame {
 }
 .fourth_mini .mini_box .box_image {
   width: 10vw;
-  height: 7vh;
+  height: 3.5vh;
   margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: scale-down ;
+  object-fit: contain ;
 }
 
 /* Main Fifth Frame */
